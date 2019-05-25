@@ -1,0 +1,103 @@
+.nav nav-pills {
+
+    margin: auto;
+}
+
+.card-img-top {
+   opacity:0.5;
+   margin: auto;
+
+}
+
+.img__description {
+    position: absolute;
+    font-size:60px;
+    top: 35%;
+    bottom: 0;
+    left: 30%;
+    right: 0;
+    color: #fff;
+    opacity: 1;
+  
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+  }
+
+.reward_text {
+	position: absolute;
+	top: 20px;
+	left: 120px;
+	font-family: Arial;
+	font-size: 30px;
+	color: black;
+	background-color: rgb(220, 220, 220, 0.8);
+	border-radius: 25px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+#chiffrage {
+    color:#FF8C00;
+    
+  }
+
+.description__hover {
+    position: absolute;
+    font-size:30px;
+    top: 50%;
+    bottom: 0;
+    left: 35%;
+    right: 0;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+  }
+
+.card-img-top:hover ~ .reward_text {
+    opacity: 0;
+  }
+
+.card-img-top:hover ~ .description__hover{
+    opacity:1;
+  }
+
+.card-img-top:hover ~ .img__description {
+    visibility: visible;
+    opacity: 0;
+  }
+  
+.card-img-top:hover {
+     opacity:1;
+  }
+  
+  .col {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: auto;
+}
+
+  hr {
+    border-top: 1px solid #5e5e5e;
+  }
+
+  .table td, th {
+    text-align: center;   
+ }
+
+ footer {
+  background: #343a40;
+  padding: 40px;
+}
+footer a {
+  color: #f8f9fa
+}
+
+.gras {
+ font-weight: 600;
+
+
+}
