@@ -38,7 +38,7 @@
 	padding-top: 20px;
 }
 
-#chiffrage {
+.chiffrage {
     color:#FF8C00;
     
   }
@@ -100,4 +100,9 @@ footer a {
  font-weight: 600;
 
 
+}
+
+.fwd-text {
+
+  font-size: 15px;
 }
