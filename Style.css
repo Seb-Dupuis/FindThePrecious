@@ -7,26 +7,30 @@
    opacity:0.5;
    margin: auto;
 
+
 }
 
-.img__description {
+.description__hover {
     position: absolute;
     font-size:60px;
     top: 35%;
     bottom: 0;
-    left: 30%;
+    left:20%;
     right: 0;
     color: #fff;
     opacity: 1;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
   
     /* transition effect. not necessary */
     transition: opacity .2s, visibility .2s;
   }
 
-.reward_text {
+  .reward_text {
 	position: absolute;
-	top: 20px;
-	left: 120px;
+	top: 4%;
+	left: 14%;
 	font-family: Arial;
 	font-size: 30px;
 	color: black;
@@ -35,7 +39,9 @@
 	padding-left: 50px;
 	padding-right: 50px;
 	padding-bottom: 20px;
-	padding-top: 20px;
+  padding-top: 20px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .chiffrage {
@@ -43,7 +49,7 @@
     
   }
 
-.description__hover {
+  .img__description {
     position: absolute;
     font-size:30px;
     top: 50%;
@@ -52,22 +58,25 @@
     right: 0;
     color: rgb(255, 255, 255);
     opacity: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
   }
 
-.card-img-top:hover ~ .reward_text {
+  .card-img-top:hover ~ .reward_text {
+    visibility: hidden;
     opacity: 0;
   }
 
-.card-img-top:hover ~ .description__hover{
+  .card-img-top:hover ~ .img__description{
     opacity:1;
   }
 
-.card-img-top:hover ~ .img__description {
-    visibility: visible;
+  .card-img-top:hover ~ .description__hover {
+    visibility: hidden;
     opacity: 0;
   }
-  
-.card-img-top:hover {
+
+  .card-img-top:hover {
      opacity:1;
   }
   
@@ -106,3 +115,4 @@ footer a {
 
   font-size: 15px;
 }
+
